@@ -14,7 +14,6 @@ const List = ({ people }) => {
                 <h4>{name}</h4>
                 <p>{age} anos</p>
               </div>
-              <button className="btn">teste</button>
             </article>
           );
         })
