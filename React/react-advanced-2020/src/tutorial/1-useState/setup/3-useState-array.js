@@ -26,7 +26,7 @@ const UseStateArray = () => {
         type="button"
         className="btn"
         onClick={() => setPeople([])}
-        value="Limpar tudo" 
+        value="Limpar tudo"
       />
     </>
   );
