@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-const url = 'https://api.github.com/users/QuincyLarson';
+const url = 'https://api.github.com/users/saviorocha';
 const MultipleReturns = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
@@ -18,6 +18,7 @@ const MultipleReturns = () => {
       })
       .then((user) => {
         const { login } = user;
+        // console.log(user);
         setUser(login);
         setIsLoading(false);
       })

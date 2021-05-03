@@ -19,7 +19,5 @@ function BookList() {
     </section>
   );
 }
-
-
-
+ 
 ReactDom.render(<BookList />, document.getElementById('root'));

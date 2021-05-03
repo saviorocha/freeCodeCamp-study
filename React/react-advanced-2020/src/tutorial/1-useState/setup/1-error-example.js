@@ -3,6 +3,10 @@ import React from 'react';
 const ErrorExample = () => {
   let title = "Título aleatório";
   const onClickHandler = () => {
+    /**
+     * O erro acontence pois mudamos o valor mas não renderizamos novamente o componente
+     * Para isso teremos que usar o useState
+     */
     title = "Título mudado!";
     console.log(title);
   }

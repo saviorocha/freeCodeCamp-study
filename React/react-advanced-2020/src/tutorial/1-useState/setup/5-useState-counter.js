@@ -8,9 +8,9 @@ const UseStateCounter = () => {
 
   const complexIncrease = () => {
     setTimeout(() => {
-      // setValue(value + 1);
+      // setValue(value + 1); // não funciona direito pois o valor inicial não é preservado entre os cliques
       setValue((prevValue) => {
-        return prevValue + 1;
+        return prevValue + 1; // não deve retornar undefined 
       });
     }, 2000);
   }

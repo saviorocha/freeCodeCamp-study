@@ -13,7 +13,7 @@ const UseEffectCleanup = () => {
   useEffect(() => {
     console.log("useEffect");
     window.addEventListener("resize", checkSize);
-    return () => {
+    return () => { // -> função opcional de cleanup
       console.log("cleanup");
       window.removeEventListener("resize", checkSize);
     };

@@ -35,15 +35,14 @@ import ReactDom from 'react-dom';
 /** -- Nested Components --
  * 
  */
-function Greeting() { // nome da função precisa começar com maiúsculo
+function Greeting() { 
     return (
         <div>
             <Person componente="react" />
             <Person nome="Sávio" />
             <Message />
         </div>
-    ) // função precisa retornar um "html"
-    // tecnicamente esse retorno é um JSX e não um HTML
+    ) 
 }
 
 const Person = (props) => {
